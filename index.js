@@ -1,3 +1,5 @@
+var iconv = require('iconv-lite');
+var jschardet = require("jschardet")
 var models = require('./models/db.js');
 
 // models.mssql.authenticate();
@@ -31,5 +33,18 @@ function transformArticle(a) {
             createdAt: a.dateCreate
     });
     article.save();
+    //jschardet.Constants._debug = true;
+    // var s = a.author
+    // if(s)
+    // {
+    //     var buf = Buffer.from(s);
+    //     if(jschardet.detect(buf).encoding !== 'UTF-8' ) {
+    //         console.log(jschardet.detect(buf).encoding + " " + a.id + " " + s);
+    //         //console.log(iconv.decode(iconv.encode(s, 'ascii'), 'utf8'));
+    //     }
+    // }
+    
+    // console.log(jschardet.detect(buf));
+    
 }
 
