@@ -6,16 +6,12 @@ db.mssql = new Sequelize(`mssql://${cfg.mssql.user}:${cfg.mssql.pass}@${cfg.mssq
     {
         logging: undefined
     });
-
-var seq_pgsql = new Sequelize(`postgres://${cfg.pgsql.user}:${cfg.pgsql.pass}@${cfg.pgsql.host}:${cfg.pgsql.port}/${cfg.pgsql.database}`,
-    {
-        logging: undefined
-    });
-
-
 db.mssql.articles = db.mssql.import('./mssql/article.js');
-db.pgsql = {
-    
-};
+
+db.pgsql = new Sequelize(`postgres://${cfg.pgsql.user}:${cfg.pgsql.pass}@${cfg.pgsql.host}:${cfg.pgsql.port}/${cfg.pgsql.database}`,
+    {
+        //logging: undefined
+    });
+db.pgsql.articles = db.pgsql.import('./pgsql/article.js');
 
 module.exports = db;
