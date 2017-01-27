@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/pmenshih/mssql2pgsql/issues"
   },
-  "homepage": "https://github.com/pmenshih/mssql2pgsql#readme"
+  "homepage": "https://github.com/pmenshih/mssql2pgsql#readme",
+  "dependencies": {
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.0",
+    "tedious": "^1.14.0"
+  }
 }
