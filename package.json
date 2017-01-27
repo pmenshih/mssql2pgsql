@@ -1,0 +1,19 @@
+{
+  "name": "mssql2pgsql",
+  "version": "1.0.0",
+  "description": "Переносчик статей билиотеки psycho.ru с MSSQL в PostgreSQL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "pmenshih",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmenshih/mssql2pgsql.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pmenshih/mssql2pgsql/issues"
+  },
+  "homepage": "https://github.com/pmenshih/mssql2pgsql#readme"
+}
