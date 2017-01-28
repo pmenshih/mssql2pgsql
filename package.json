@@ -17,11 +17,11 @@
   },
   "homepage": "https://github.com/pmenshih/mssql2pgsql#readme",
   "dependencies": {
-    "iconv-lite": "^0.4.15",
-    "jschardet": "^1.4.1",
-    "pg": "^6.1.2",
-    "pg-hstore": "^2.3.2",
-    "sequelize": "^3.30.0",
-    "tedious": "^1.14.0"
+    "iconv-lite": "0.4.15",
+    "jschardet": "1.4.1",
+    "pg": "6.1.2",
+    "pg-hstore": "2.3.2",
+    "sequelize": "3.30.0",
+    "tedious": "1.14.0"
   }
 }
